@@ -1,0 +1,207 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap'); */
+@font-face {
+    font-family: "karla";
+    src: url(./assets/fonts/Karla-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "karla";
+}
+
+:root {
+    --Green-200-lighter: hsl(148, 38%, 91%);
+    --Green-600-medium: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-500-medium: hsl(186, 15%, 59%);
+    --Grey-900-darker: hsl(187, 24%, 22%);
+}
+
+body {
+    background-color: var(--Green-200-lighter);
+    min-height: 100vh;
+    margin-block: 30px;
+}
+
+
+main {
+    background-color: var(--White);
+    height: 700px;
+    width: 98%;
+    margin-inline: auto;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: var(--font-size-labels, 1rem);
+    color: var(--Grey-900-darker);
+}
+
+
+.name {
+    margin-top: 10px;
+   
+}
+
+.first {
+    width: 100%;
+  
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.inputname {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+.enquiry {
+    border: 1px solid;
+    border-radius: 9px;
+    height: 40px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.secondenquiry {
+    border: 1px solid;
+    border-radius: 9px;
+    height: 40px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+   
+}
+input:hover{
+    border: 2px solid green;
+}
+input:focus
+{
+   border: 2px solid greenyellow;
+   outline: none;
+}
+
+
+.message {
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+
+}
+
+.email {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.consent {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.star {
+    color: var(--Green-600-medium);
+}
+
+.final {
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    background-color: var(--Green-600-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.final:hover{
+    background-color: var(--Grey-900-darker);
+}
+
+.submit {
+    margin-top: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+    
+}
+
+.text {
+    color: white;
+}
+
+.text:hover {
+    color: black;
+}
+
+
+
+@media (min-width:425px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media (min-width:640px) {
+    main {
+        max-width: 85%;
+    }
+
+}
+
+@media (min-width:768px) {
+    main {
+        max-width: 720px;
+    }
+
+    .border {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .allenquiry {
+        display: flex;
+        flex-direction: row;
+        gap: 10px; 
+    }
+    .enquiry{
+        width: 100%;
+    }
+    .secondenquiry{
+        width: 100%;
+    }
+
+}
+
+@media (width>=1440px) {
+    main {
+        max-width: 720px;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
